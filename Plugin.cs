@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Reflection;
 using BepInEx;
@@ -51,6 +51,7 @@ namespace DougFrame
             AssetObj.transform.position = new Vector3(-65.5974f, 12.331f, - 84.9168f);
             AssetObj.transform.rotation = Quaternion.Euler(270f, 64.5012f, 0f);
             AssetObj.transform.localScale = new Vector3(30.5288f, 39.1639f, 39.0486f);
+            AssetObj.layer = 8;
         }
 
         AssetBundle LoadAssetBundle(string path)
